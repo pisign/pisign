@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">Milestones</h2>
+    <ul class="post-list">
+        {%- for post in site.categories.milestones -%}
+            <li> {%- assign date_format = site.minima.date_format |
+                default: "%b  %-d, %Y" -%}
+                <span class="post-meta">
+                    {{ post.date | date: date_format }}:
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        {{ post.title | escape }}
+                    </a>
+                </span>
+                <br>
+                <h3>{{ post.excerpt | strip_html }}</h3>
+                <span>...</span>
+                <a class="post-link" href="{{ post.url | relative_url }}">More</a>
+            </li>
+        {%- endfor -%}
+    </ul>
+    <!--
+    <p class="feed-subscribe">
+        <a href="{{ 'feed.xml' | relative_url }}">
+            <svg class="svg-icon orange">
+            <use xlink:href="{{'assets/social-icons.svg#rss' | relative_url}}"></use>
+            </svg><span>Subscribe</span>
+        </a>
+    </p>
+    -->
+{%- endif -%}
+        

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/mystyle.css' | relative_url }}" />
+    
+    <!-- Github Button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'pisign/community'
+      };
+      </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+{% seo %}
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+
+        <a href="{{ site.url }}" class="btn">Home</a>
+        <a class="github-button" href="https://github.com/pisign" data-size="large" aria-label="Follow @pisign on GitHub">Follow @pisign</a>
+
+        <a href="{{ site.url }}/milestones"> Milestones </a>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        {{ content }}
+      </section>
+    </div>
+  </body>
+</html>
+

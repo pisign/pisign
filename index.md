@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 ## Welcome to PiSign
 
 PiSign is a intuitive dashboard targeted towards the Raspberry Pi.
@@ -6,33 +11,8 @@ PiSign is a work in progress being developed by students at the University of No
 
 ### Contributor Guidelines
 
-Chat: [Gitter](https://gitter.im/pisign/community)
+Gitter Chat: See gitter side bar in the bottom right corner
 
 Github: [PiSign](https://github.com/pisign)
 
 Feel free to open any bugs as an issue in Github.
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pisign/website/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
