@@ -1,15 +1,16 @@
-## Welcome to GitHub Pages
+## Welcome to PiSign
 
-You can use the [editor on GitHub](https://github.com/pisign/website/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+PiSign is a intuitive dashboard targeted towards the Raspberry Pi.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+PiSign is a work in progress being developed by students at the University of Notre Dame.
 
-### Markdown
+### Contributor Guidelines
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Chat: [Gitter](https://gitter.im/pisign/community)
 
-```markdown
-Syntax highlighted code block
+Github: [PiSign](https://github.com/pisign)
+
+Feel free to open any bugs as an issue in Github.
 
 # Header 1
 ## Header 2
