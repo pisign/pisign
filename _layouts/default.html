@@ -22,21 +22,25 @@
   <body>
 
     <header>
-      <div class="container">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+      <div id="container">
+        <div class="inner">
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
-        <a href="{{ site.url }}" class="btn">Home</a>
-        <a class="github-button" href="https://github.com/pisign" data-size="large" aria-label="Follow @pisign on GitHub">Follow @pisign</a>
+          <a href="{{ site.url }}" class="btn">Home</a>
+          <a class="github-button" href="https://github.com/pisign" data-size="large" aria-label="Follow @pisign on GitHub">Follow @pisign</a>
 
-        <a href="{{ site.url }}/milestones"> Milestones </a>
+          <a href="{{ site.url }}/milestones"> Milestones </a>
+        </div>
       </div>
     </header>
 
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
+    <div id="container">
+      <div class="inner">
+        <section id="main_content">
+          {{ content }}
+        </section>
+      </div>
     </div>
   </body>
 </html>
