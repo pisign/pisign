@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/mystyle.css' | relative_url }}" />
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
     <!-- Github Button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script>
@@ -15,29 +16,34 @@
       };
       </script>
     <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+    <style>
+      #main_content {
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
 
 {% seo %}
   </head>
 
   <body>
+    <div id="container">
+      <div class="inner">
+        <header>
+          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+<!--           Deleting until we get a tagline <h2>{{ site.description | default: site.github.project_tagline }}</h2> -->
 
-    <header>
-      <div class="container">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+          <a href="{{ site.url }}" class="btn">Home</a>
+          <a href="{{ site.url }}/milestones"> Milestones </a>
+          <a href="{{ site.url }}/ideas">Ideas</a>
+          <br>
+          <a class="github-button" href="https://github.com/pisign" data-size="large" aria-label="Follow @pisign on GitHub">Follow @pisign</a>
 
-        <a href="{{ site.url }}" class="btn">Home</a>
-        <a class="github-button" href="https://github.com/pisign" data-size="large" aria-label="Follow @pisign on GitHub">Follow @pisign</a>
+        </header>
 
-        <a href="{{ site.url }}/milestones"> Milestones </a>
-        <a href="{{ site.url }}/ideas">Ideas</a>
+        <section id="main_content">
+          {{ content }}
+        </section>
       </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
     </div>
   </body>
 </html>
