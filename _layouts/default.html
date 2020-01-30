@@ -16,11 +16,6 @@
       };
       </script>
     <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-    <style>
-      #main_content {
-        font-family: 'Roboto', sans-serif;
-      }
-    </style>
 
 {% seo %}
   </head>
@@ -31,10 +26,11 @@
         <header>
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
 <!--           Deleting until we get a tagline <h2>{{ site.description | default: site.github.project_tagline }}</h2> -->
-
-          <a href="{{ site.url }}" class="btn">Home</a>
-          <a href="{{ site.url }}/milestones"> Milestones </a>
-          <a href="{{ site.url }}/ideas">Ideas</a>
+          <div class="navbar">
+            <a href="{{ site.url }}" class="btn spacing">Home</a>
+            <a href="{{ site.url }}/milestones" class="spacing"> Milestones </a>
+            <a href="{{ site.url }}/ideas" class="spacing">Ideas</a>
+          </div>
           <br>
           <a class="github-button" href="https://github.com/pisign" data-size="large" aria-label="Follow @pisign on GitHub">Follow @pisign</a>
 

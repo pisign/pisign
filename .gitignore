@@ -1,4 +1,6 @@
 _site
+vendor/
 *.lock
-
 *.code-workspace
+.jekyll-metadata
+.bundle/config
