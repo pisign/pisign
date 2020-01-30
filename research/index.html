@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+{%- for page in site.pages %}
+  {%- if page.type == "research" %}
+    <h3>{{ page.title}}</h3>
+    {{ page.content }}
+  {% endif %}
+{%- endfor %}

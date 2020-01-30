@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{%- if site.posts.size > 0 -%}
+  <h2 class="post-list-heading">Updates</h2>
+  <ul class="post-list">
+    {%- for post in site.categories.updates -%}
+      <li> {%- assign date_format = site.minima.date_format |
+        default: "%b  %-d, %Y" -%}
+        <span class="post-meta">
+          {{ post.date | date: date_format }}:
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </span>
+        <br>
+        <h3>{{ post.excerpt | strip_html }}</h3>
+        <span>...</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">More</a>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+        
