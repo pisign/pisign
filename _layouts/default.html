@@ -26,10 +26,11 @@
         <header>
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
 <!--           Deleting until we get a tagline <h2>{{ site.description | default: site.github.project_tagline }}</h2> -->
-
-          <a href="{{ site.url }}" class="btn">Home</a>
-          <a href="{{ site.url }}/updates" class="btn"> Updates </a>
-          <br>
+          <div class="navbar">
+            <a href="{{ site.url }}" class="btn spacing">Home</a>
+            <a href="{{ site.url }}/updates" class="btn spacing">Updates</a>
+            <a href="{{ site.url }}/research" class="btn spacing">Research</a>
+          </div>
           <a class="github-button" href="https://github.com/pisign" data-size="large" aria-label="Follow @pisign on GitHub">Follow @pisign</a>
 
         </header>
