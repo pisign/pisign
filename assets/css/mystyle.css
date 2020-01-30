@@ -1,0 +1,13 @@
+#main_content {
+  font-family: 'Roboto', sans-serif;
+}
+.spacing {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar {
+  margin-bottom: 5px;
+}
+header {
+  text-align: center;
+}
