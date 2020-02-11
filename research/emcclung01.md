@@ -1,15 +1,14 @@
 ---
 layout: plain
-title: ""
+title: "Raspberry Digital Signage"
 type: "research"
 author: "Erin"
 ---
 
+
 * Is an operating system designed for digital signage installations on the Raspberry Pi.
 
-*Displays web pages from LAN, Internet or internal (SD-card-hosted) folder in a restricted full-screen view.
-
-- Contains a WordPress installation embedded by default, where the Raspberry Pi is used as the source web server
+* Displays web pages from LAN, Internet or internal (SD-card-hosted) folder in a restricted full-screen view. Contains a WordPress installation embedded by default, where the Raspberry Pi is used as the source web server
 
 * Uses Chromium builds that features HTML5 to display
 
