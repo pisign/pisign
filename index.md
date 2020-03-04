@@ -15,6 +15,8 @@ PiSign is an interactive dashboard that will use [Vue.js](https://vuejs.org/) an
 
 For more information on our design choices and plan, check out the [following blog post]({{ site.url }}/updates/2020/02/13/milestone-2)!
 
+We have a prototype as a part of our milestone 3. You can check out our updated post [here]({{ site.url }}/updates/2020/03/03/milestone-3)!
+
 ### Contributor Guidelines
 
 Gitter Chat: See gitter side bar in the bottom right corner
